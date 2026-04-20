@@ -5,54 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>UAITour</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body>
-    <nav class="top-nav">
-        <h1 class="logo-title">UAITour</h1>
-        <input class="search-bar" type="text" placeholder="Search...">
-        <ul class="top-nav-btn-list">
-            <li class="top-nav-btn"><a class="btn-style" href="#">Locais</a></li>
-            <li class="top-nav-btn"><a class="btn-style" href="#">Sobre</a></li>
-            <li class="top-nav-btn"><a class="btn-style" href="#">Contato</a></li>
-        </ul>
-    </nav>
-    <header class="hero">
-        <img class="hero-img" src="imgs/CURA-BH-FOTO-TAMAS-BODOLAY-1-e1756461678916.jpg" alt="Centro de Belo Horizonte">
-        <div class="fun_fact-container">
-            <p class="fun_fact">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum rem nesciunt, amet assumenda inventore sint debitis enim qui reiciendis dolorem quaerat? Doloremque illo quam ullam repellat, ab incidunt est eum corrupti excepturi sunt voluptatem aspernatur sit officiis, id aperiam consectetur earum placeat numquam? Distinctio velit, debitis nihil natus perferendis consectetur!</p>
-        </div>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-success">
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand text-light">UAITour</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" data-bs-theme="dark">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto gap-lg-3">
+                        <li class="nav-item"><a href="#" class="nav-link text-light">Home</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-light">Sobre nós</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-light">Locais</a></li>
+                        <li class="nav-item "><a href="#" class="nav-link text-light">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
-    <main class="trending-area">
-        <h2 class="trending-title">Lugares Populares 🔥</h2>
-        <section class="trending-places">
-            <article class="trending-place-container">
-                <img src="https://picsum.photos/200/300" alt="">
-                <div class="trending-place-container-text">
-                    <h3>Local 1</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim neque quam id iure repellendus reprehenderit fugit eos sapiente ratione minima modi maxime, earum hic qui. Alias, molestiae? Libero temporibus earum neque ducimus architecto? Impedit facere deleniti dolor ipsa cum dicta, eligendi hic provident. Animi consequuntur dignissimos quas, repudiandae voluptates sint.</p>
+    <main class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="banner position-relative">
+                <img src="imgs/CURA-BH-FOTO-TAMAS-BODOLAY-1-e1756461678916.jpg" class="w-100">
+                <div class="position-absolute bottom-0 end-0 w-100 text-center p-3">
+                    <p class="text-white fst-italic fs-6 fs-lg-4">
+                    ">"Belo aqui, belo adiante, de um horizonte gigante. Um solo que acolhe a gente" — Rejane Helena Neves.
+                    </p>
                 </div>
-            </article>
-            <article class="trending-place-container">
-                <img src="https://picsum.photos/200/300" alt="">
-                <div class="trending-place-container-text">
-                    <h3>Local 2</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim neque quam id iure repellendus reprehenderit fugit eos sapiente ratione minima modi maxime, earum hic qui. Alias, molestiae? Libero temporibus earum neque ducimus architecto? Impedit facere deleniti dolor ipsa cum dicta, eligendi hic provident. Animi consequuntur dignissimos quas, repudiandae voluptates sint.</p>
                 </div>
-            </article>
-            <article class="trending-place-container">
-                <img src="https://picsum.photos/200/300" alt="">
-                <div class="trending-place-container-text">
-                    <h3>Local 3</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim neque quam id iure repellendus reprehenderit fugit eos sapiente ratione minima modi maxime, earum hic qui. Alias, molestiae? Libero temporibus earum neque ducimus architecto? Impedit facere deleniti dolor ipsa cum dicta, eligendi hic provident. Animi consequuntur dignissimos quas, repudiandae voluptates sint.</p>
-                </div>
-            </article>
-        </section>
-        <div class="trending-btn-container">
-            <a class="trending-btn btn-style" href="#">Clique para ver mais</a>
+            </div>
         </div>
     </main>
-    <footer class="down-footer">
-        <p>Copyright &copy; 2026</p>
+    <section>
+        <div class="container">
+            <div class="row">
+                <h2 class="col text-center p-3 p-lg-5 fs-4 fs-lg-2">
+                   🔥 Lugares Trend 🔥
+                </h2>
+            </div>
+            <div id="cardCarousel" class="carousel slide carousel-fade mx-auto" style="max-width: 600px;">
+                <div class="carousel-inner px-4">
+                    <div class="carousel-item active">
+                        <img src="https://picsum.photos/500/500?random=1" alt="" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://picsum.photos/500/500?random=2" alt="" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://picsum.photos/500/500?random=3" alt="" class="d-block w-100">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#cardCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#cardCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#cardCarousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#cardCarousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#cardCarousel" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="bg-dark p-4 mt-5">
+            <div class="text-center text-white">Copyright</div>
+        </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
